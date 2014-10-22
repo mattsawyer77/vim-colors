@@ -14,7 +14,7 @@ let g:colors_name = "mattland"
 hi Cursor ctermfg=16 ctermbg=16 cterm=NONE guifg=#2a2b2f guibg=#FF4740 gui=NONE
 hi CursorLineNr guifg=#ffa300
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#515559 gui=NONE
-hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
+hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
 hi LineNr ctermfg=102 ctermbg=235 cterm=NONE guifg=#445566 guibg=#222222 gui=NONE
@@ -128,8 +128,8 @@ hi jsCommentTodo ctermbg=160 ctermfg=254       "TODO FIXME XXX TBD contained
 "hi jsLineComment        "start=+^\s*\/\/+ skip=+\n\s*\/\/+ end=+$+ keepend contains=jsCommentTodo,@Spell fold
 "hi jsCvsTag             "start="\$\cid:" end="\$" oneline contained
 "hi jsComment            "start="/\*"  end="\*/" contains=jsCommentTodo,jsCvsTag,@Spell fold
-hi jsStringD ctermbg=237 ctermfg=254          "start=+"+  skip=+\\\\\|\\$"+  end=+"+  contains=jsSpecial,@htmlPreproc,@Spell
-hi jsStringS ctermbg=237 ctermfg=254          "start=+'+  skip=+\\\\\|\\$'+  end=+'+  contains=jsSpecial,@htmlPreproc,@Spell
+hi jsStringD ctermbg=236 ctermfg=254          "start=+"+  skip=+\\\\\|\\$"+  end=+"+  contains=jsSpecial,@htmlPreproc,@Spell
+hi jsStringS ctermbg=236 ctermfg=254          "start=+'+  skip=+\\\\\|\\$'+  end=+'+  contains=jsSpecial,@htmlPreproc,@Spell
 "hi jsTemplateString     "start=+`+  skip=+\\\\\|\\$`+  end=+`+  contains=jsTemplateVar,jsSpecial,@htmlPreproc
 hi jsRegexpCharClass ctermfg=191   "start=+\[+ skip=+\\.+ end=+\]+ contained
 hi jsRegexpGroup ctermfg=191      "start="\\\@<!(" end="\\\@<!)" contained contains=jsRegexpCharClass,@jsRegexpSpecial keepend
