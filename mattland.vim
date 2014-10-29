@@ -12,7 +12,7 @@ endif
 let g:colors_name = "mattland"
 
 hi Cursor ctermfg=16 ctermbg=16 cterm=NONE guifg=#2a2b2f guibg=#FF4740 gui=NONE
-hi CursorLineNr guifg=#ffa300
+hi CursorLineNr guifg=#ffa300 ctermfg=208
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#515559 gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
@@ -103,8 +103,8 @@ hi cssClassName ctermfg=74 ctermbg=NONE cterm=NONE guifg=#72aaca guibg=NONE gui=
 hi cssValueLength ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b8d977 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b7d877 guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi SignColor guibg=#2D2F31
-hi FoldColumn ctermbg=74 guibg=#72aada
+hi SignColor guibg=#2D2F31 
+hi FoldColumn ctermbg=235 guibg=#444444
 
 " extended javascript syntax highlighting:
 hi jsPrototype ctermfg=80
