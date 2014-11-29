@@ -14,7 +14,7 @@ let g:colors_name = "mattland"
 hi Cursor ctermfg=16 ctermbg=16 cterm=NONE guifg=#2a2b2f guibg=#FF4740 gui=NONE
 hi CursorLineNr guifg=#ffa300 ctermfg=208
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#515559 gui=NONE
-hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
+hi CursorLine ctermfg=NONE ctermbg=235 cterm=NONE guifg=NONE guibg=#2A2D31 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3b3e40 gui=NONE
 hi LineNr ctermfg=102 ctermbg=235 cterm=NONE guifg=#445566 guibg=#222222 gui=NONE
@@ -28,7 +28,7 @@ hi Search ctermfg=0 ctermbg=6 cterm=NONE guibg=#5AB6DB guifg=#311F17
 hi IncSearch ctermfg=0 ctermbg=7 cterm=NONE guifg=#9FF3F6 guibg=#000 gui=NONE
 hi Directory ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b8d977 guibg=NONE gui=NONE
 hi Folded ctermfg=102 ctermbg=16 cterm=NONE guifg=#798188 guibg=#26292c gui=NONE
-hi Normal ctermfg=250 ctermbg=NONE cterm=NONE guifg=#aabbcc guibg=#26292c gui=NONE
+hi Normal ctermfg=250 ctermbg=NONE cterm=NONE guifg=#aabbcc guibg=#1B1E20 gui=NONE
 hi Boolean ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b8d977 guibg=NONE gui=NONE
 hi Character ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b8d977 guibg=NONE gui=NONE
 hi Comment ctermfg=102 ctermbg=NONE cterm=NONE guifg=#798188 guibg=NONE gui=NONE
@@ -108,9 +108,9 @@ hi FoldColumn ctermbg=235 guibg=#444444
 
 " extended javascript syntax highlighting:
 hi jsPrototype ctermfg=80
-hi jsFuncCall ctermfg=195
-hi jsFuncName ctermfg=195
-hi jsFunction ctermfg=195
+hi jsFuncCall ctermfg=195 guifg=#D7FFFF
+hi jsFuncName ctermfg=195 guifg=#D7FFFF
+hi jsFunction ctermfg=195 guifg=#D7FFFF
 hi jsParens ctermfg=195
 hi jsFuncParens ctermfg=195
 hi jsBrackets ctermfg=195
@@ -128,8 +128,8 @@ hi jsCommentTodo ctermbg=160 ctermfg=254       "TODO FIXME XXX TBD contained
 "hi jsLineComment        "start=+^\s*\/\/+ skip=+\n\s*\/\/+ end=+$+ keepend contains=jsCommentTodo,@Spell fold
 "hi jsCvsTag             "start="\$\cid:" end="\$" oneline contained
 "hi jsComment            "start="/\*"  end="\*/" contains=jsCommentTodo,jsCvsTag,@Spell fold
-hi jsStringD ctermbg=236 ctermfg=254          "start=+"+  skip=+\\\\\|\\$"+  end=+"+  contains=jsSpecial,@htmlPreproc,@Spell
-hi jsStringS ctermbg=236 ctermfg=254          "start=+'+  skip=+\\\\\|\\$'+  end=+'+  contains=jsSpecial,@htmlPreproc,@Spell
+hi jsStringD ctermbg=236 ctermfg=254 guibg=#2A2D31         "start=+"+  skip=+\\\\\|\\$"+  end=+"+  contains=jsSpecial,@htmlPreproc,@Spell
+hi jsStringS ctermbg=236 ctermfg=254 guibg=#2A2D31         "start=+'+  skip=+\\\\\|\\$'+  end=+'+  contains=jsSpecial,@htmlPreproc,@Spell
 "hi jsTemplateString     "start=+`+  skip=+\\\\\|\\$`+  end=+`+  contains=jsTemplateVar,jsSpecial,@htmlPreproc
 hi jsRegexpCharClass ctermfg=191   "start=+\[+ skip=+\\.+ end=+\]+ contained
 hi jsRegexpGroup ctermfg=191      "start="\\\@<!(" end="\\\@<!)" contained contains=jsRegexpCharClass,@jsRegexpSpecial keepend
@@ -153,7 +153,7 @@ hi jsNumber ctermfg=160            "Infinity
 "hi jsBracket            "matchgroup=jsBrackets     start="\[" end="\]" contains=@jsAll,jsParensErrB,jsParensErrC,jsBracket,jsParen,jsBlock,@htmlPreproc fold
 "hi jsParen              "matchgroup=jsParens       start="("  end=")"  contains=@jsAll,jsParensErrA,jsParensErrC,jsParen,jsBracket,jsBlock,@htmlPreproc fold
 hi jsBlock ctermfg=255             "matchgroup=jsBraces       start="{"  end="}"  contains=@jsAll,jsParensErrA,jsParensErrB,jsParen,jsBracket,jsBlock,jsObjectKey,@htmlPreproc fold
-hi jsFuncBlock ctermfg=254         "matchgroup=jsFuncBraces   start="{"  end="}"  contains=@jsAll,jsParensErrA,jsParensErrB,jsParen,jsBracket,jsBlock,@htmlPreproc contained fold
+hi jsFuncBlock ctermfg=254 guifg=#DEEFF0        "matchgroup=jsFuncBraces   start="{"  end="}"  contains=@jsAll,jsParensErrA,jsParensErrB,jsParen,jsBracket,jsBlock,@htmlPreproc contained fold
 "hi jsTernaryIf          "matchgroup=jsTernaryIfOperator start=+?+  end=+:+  contains=@jsExpression,jsTernaryIf
 hi jsFuncArgs ctermfg=254          "contained matchgroup=jsFuncParens start='(' end=')' contains=jsFuncArgCommas,jsFuncArgRest nextgroup=jsFuncBlock keepend skipwhite skipempty
 "hi jsArgsObj            "arguments contained containedin=jsFuncBlock
